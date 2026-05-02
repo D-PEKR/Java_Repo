@@ -24,10 +24,10 @@ public class GameBoard extends JPanel {
     private static final Color FARBE_BUTTON_HOVER  = new Color(69, 71, 90);
 
     /** Textfarbe für Spieler X */
-    private static final Color FARBE_X             = new Color(243, 139, 168); // Rosa
+    private static final Color FARBE_X             = new Color(226, 14, 78); // Rosa
 
     /** Textfarbe für Spieler O */
-    private static final Color FARBE_O             = new Color(137, 220, 235); // Hellblau
+    private static final Color FARBE_O             = new Color(20, 185, 221); // Hellblau
 
     /** Standardtextfarbe (leer) */
     private static final Color FARBE_LEER          = new Color(88, 91, 112);

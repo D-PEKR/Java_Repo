@@ -36,10 +36,10 @@ public class GameWindow extends JFrame {
     private static final Color FARBE_STATUS           = new Color(205, 214, 244);
 
     /** Farbe für das X-Symbol im Statustext */
-    private static final Color FARBE_X                = new Color(243, 139, 168);
+    private static final Color FARBE_X                = new Color(226, 14, 78);
 
     /** Farbe für das O-Symbol im Statustext */
-    private static final Color FARBE_O                = new Color(137, 220, 235);
+    private static final Color FARBE_O                = new Color(20, 185, 221);
 
     /** Schriftart für den Titel */
     private static final Font SCHRIFT_TITEL           = new Font("Monospaced", Font.BOLD, 28);
