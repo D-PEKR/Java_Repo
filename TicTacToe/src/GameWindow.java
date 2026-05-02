@@ -135,7 +135,7 @@ public class GameWindow extends JFrame {
             statusLabel.setText("Unentschieden!");
             statusLabel.setForeground(FARBE_STATUS);
         } else {
-            nachricht = "Spieler " + gewinner.getAnzeige() + " hat gewonnen! 🎉";
+            nachricht = "Spieler " + gewinner.getAnzeige() + " hat gewonnen!";
             statusLabel.setText("Spieler " + gewinner.getAnzeige() + " gewinnt!");
             statusLabel.setForeground(gewinner == PlayerSymbol.X ? FARBE_X : FARBE_O);
         }
