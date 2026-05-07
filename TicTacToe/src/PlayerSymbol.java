@@ -13,16 +13,12 @@ public enum PlayerSymbol {
     /** Symbol für Spieler O */
     O("O");
 
-    // -----------------------------------------------------------------------
     // Felder
-    // -----------------------------------------------------------------------
 
     /** Textdarstellung des Symbols (für die Anzeige auf den Buttons) */
     private final String anzeige;
 
-    // -----------------------------------------------------------------------
     // Konstruktor
-    // -----------------------------------------------------------------------
 
     /**
      * Erstellt ein Symbol mit der zugehörigen Textdarstellung.
@@ -33,9 +29,7 @@ public enum PlayerSymbol {
         this.anzeige = anzeige;
     }
 
-    // -----------------------------------------------------------------------
     // Methoden
-    // -----------------------------------------------------------------------
 
     /**
      * Liefert die Textdarstellung des Symbols.

@@ -16,9 +16,7 @@ import java.awt.event.ActionEvent;
  */
 public class GameWindow extends JFrame {
 
-    // -----------------------------------------------------------------------
     // Konstanten – Farben und Schriften
-    // -----------------------------------------------------------------------
 
     /** Hintergrundfarbe des gesamten Fensters */
     private static final Color FARBE_HINTERGRUND      = new Color(30, 30, 46);
@@ -53,9 +51,7 @@ public class GameWindow extends JFrame {
     /** Bevorzugte Fenstergröße */
     private static final Dimension FENSTER_GROESSE    = new Dimension(480, 580);
 
-    // -----------------------------------------------------------------------
     // Felder
-    // -----------------------------------------------------------------------
 
     /** Panel mit dem 3×3-Spielfeld */
     private final GameBoard spielfeld;
@@ -66,9 +62,7 @@ public class GameWindow extends JFrame {
     /** Controller, der Logik und GUI verbindet */
     private GameController controller;
 
-    // -----------------------------------------------------------------------
     // Konstruktor
-    // -----------------------------------------------------------------------
 
     /**
      * Baut das komplette Fenster auf und macht es sichtbar.
@@ -102,9 +96,7 @@ public class GameWindow extends JFrame {
         aktualisiereStatus(logik.getAktuellerSpieler());
     }
 
-    // -----------------------------------------------------------------------
     // Öffentliche Methoden (für Controller-Rückmeldungen)
-    // -----------------------------------------------------------------------
 
     /**
      * Aktualisiert die Statusleiste mit dem Namen des aktiven Spielers.
@@ -155,9 +147,7 @@ public class GameWindow extends JFrame {
         }
     }
 
-    // -----------------------------------------------------------------------
     // Private Hilfsmethoden – Aufbau der GUI-Komponenten
-    // -----------------------------------------------------------------------
 
     /**
      * Konfiguriert die Grundeigenschaften des JFrame.

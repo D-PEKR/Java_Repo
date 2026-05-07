@@ -10,9 +10,7 @@ import java.awt.event.ActionListener;
  */
 public class GameBoard extends JPanel {
 
-    // -----------------------------------------------------------------------
     // Konstanten – Farben und Schriften
-    // -----------------------------------------------------------------------
 
     /** Hintergrundfarbe des Spielfelds */
     private static final Color FARBE_HINTERGRUND  = new Color(30, 30, 46);
@@ -35,18 +33,14 @@ public class GameBoard extends JPanel {
     /** Schriftart für die Symbole auf den Buttons */
     private static final Font SCHRIFT_SYMBOL = new Font("Monospaced", Font.BOLD, 64);
 
-    // -----------------------------------------------------------------------
     // Felder
-    // -----------------------------------------------------------------------
 
     /**
      * Die 9 Buttons des Spielfelds, indiziert als [zeile][spalte].
      */
     private final JButton[][] buttons;
 
-    // -----------------------------------------------------------------------
     // Konstruktor
-    // -----------------------------------------------------------------------
 
     /**
      * Erstellt das Spielfeld-Panel mit einem 3×3-Grid aus Buttons.
@@ -67,9 +61,7 @@ public class GameBoard extends JPanel {
         }
     }
 
-    // -----------------------------------------------------------------------
     // Öffentliche Methoden
-    // -----------------------------------------------------------------------
 
     /**
      * Registriert einen ActionListener an allen 9 Buttons.
@@ -138,9 +130,7 @@ public class GameBoard extends JPanel {
         }
     }
 
-    // -----------------------------------------------------------------------
     // Private Hilfsmethoden
-    // -----------------------------------------------------------------------
 
     /**
      * Erstellt einen einzelnen, stilisierten Spielfeld-Button.
