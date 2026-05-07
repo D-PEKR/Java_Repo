@@ -11,9 +11,7 @@ import java.awt.event.ActionListener;
  */
 public class GameController implements ActionListener {
 
-    // -----------------------------------------------------------------------
     // Felder
-    // -----------------------------------------------------------------------
 
     /** Die Spiellogik – verwaltet Zustand und Regelprüfung */
     private final GameLogic logik;
@@ -24,9 +22,7 @@ public class GameController implements ActionListener {
     /** Das Hauptfenster – empfängt Benachrichtigungen über Spielereignisse */
     private final GameWindow fenster;
 
-    // -----------------------------------------------------------------------
     // Konstruktor
-    // -----------------------------------------------------------------------
 
     /**
      * Erstellt den Controller und verbindet alle Komponenten.
@@ -44,9 +40,7 @@ public class GameController implements ActionListener {
         spielfeld.setzeButtonListener(this);
     }
 
-    // -----------------------------------------------------------------------
     // ActionListener-Implementierung
-    // -----------------------------------------------------------------------
 
     /**
      * Wird aufgerufen, wenn ein Spielfeld-Button geklickt wird.
@@ -89,9 +83,7 @@ public class GameController implements ActionListener {
         }
     }
 
-    // -----------------------------------------------------------------------
     // Öffentliche Methoden
-    // -----------------------------------------------------------------------
 
     /**
      * Setzt Logik und GUI zurück und startet ein neues Spiel.

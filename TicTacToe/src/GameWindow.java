@@ -16,9 +16,7 @@ import java.awt.event.ActionEvent;
  */
 public class GameWindow extends JFrame {
 
-    // -----------------------------------------------------------------------
     // Konstanten – Farben und Schriften
-    // -----------------------------------------------------------------------
 
     /** Hintergrundfarbe des gesamten Fensters */
     private static final Color FARBE_HINTERGRUND      = new Color(30, 30, 46);
@@ -36,10 +34,10 @@ public class GameWindow extends JFrame {
     private static final Color FARBE_STATUS           = new Color(205, 214, 244);
 
     /** Farbe für das X-Symbol im Statustext */
-    private static final Color FARBE_X                = new Color(243, 139, 168);
+    private static final Color FARBE_X                = new Color(226, 14, 78);
 
     /** Farbe für das O-Symbol im Statustext */
-    private static final Color FARBE_O                = new Color(137, 220, 235);
+    private static final Color FARBE_O                = new Color(20, 185, 221);
 
     /** Schriftart für den Titel */
     private static final Font SCHRIFT_TITEL           = new Font("Monospaced", Font.BOLD, 28);
@@ -53,9 +51,7 @@ public class GameWindow extends JFrame {
     /** Bevorzugte Fenstergröße */
     private static final Dimension FENSTER_GROESSE    = new Dimension(480, 580);
 
-    // -----------------------------------------------------------------------
     // Felder
-    // -----------------------------------------------------------------------
 
     /** Panel mit dem 3×3-Spielfeld */
     private final GameBoard spielfeld;
@@ -66,9 +62,7 @@ public class GameWindow extends JFrame {
     /** Controller, der Logik und GUI verbindet */
     private GameController controller;
 
-    // -----------------------------------------------------------------------
     // Konstruktor
-    // -----------------------------------------------------------------------
 
     /**
      * Baut das komplette Fenster auf und macht es sichtbar.
@@ -102,9 +96,7 @@ public class GameWindow extends JFrame {
         aktualisiereStatus(logik.getAktuellerSpieler());
     }
 
-    // -----------------------------------------------------------------------
     // Öffentliche Methoden (für Controller-Rückmeldungen)
-    // -----------------------------------------------------------------------
 
     /**
      * Aktualisiert die Statusleiste mit dem Namen des aktiven Spielers.
@@ -135,7 +127,7 @@ public class GameWindow extends JFrame {
             statusLabel.setText("Unentschieden!");
             statusLabel.setForeground(FARBE_STATUS);
         } else {
-            nachricht = "Spieler " + gewinner.getAnzeige() + " hat gewonnen! 🎉";
+            nachricht = "Spieler " + gewinner.getAnzeige() + " hat gewonnen!";
             statusLabel.setText("Spieler " + gewinner.getAnzeige() + " gewinnt!");
             statusLabel.setForeground(gewinner == PlayerSymbol.X ? FARBE_X : FARBE_O);
         }
@@ -155,9 +147,7 @@ public class GameWindow extends JFrame {
         }
     }
 
-    // -----------------------------------------------------------------------
     // Private Hilfsmethoden – Aufbau der GUI-Komponenten
-    // -----------------------------------------------------------------------
 
     /**
      * Konfiguriert die Grundeigenschaften des JFrame.
