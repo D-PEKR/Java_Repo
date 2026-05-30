@@ -101,7 +101,7 @@ public class GameWindow extends JFrame {
     /**
      * Aktualisiert die Statusleiste mit dem Namen des aktiven Spielers.
      *
-     * @param spieler der Spieler, der als nächstes zieht
+     * @param spieler der Spieler, der als Nächstes zieht
      */
     public void aktualisiereStatus(PlayerSymbol spieler) {
         statusLabel.setText("Spieler " + spieler.getAnzeige() + " ist dran");
